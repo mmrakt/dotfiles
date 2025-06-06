@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Install @nestjs/passport and passport dependencies",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create authentication module structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Implement JWT strategy with passport",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Create auth guards and decorators",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Add authentication endpoints (login/register)",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update app module to include auth module",
+    "status": "completed",
+    "priority": "low",
+    "id": "6"
+  }
+]

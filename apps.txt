@@ -1,0 +1,4 @@
+visual-studio-code
+iterm2
+firefox
+slack

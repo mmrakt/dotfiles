@@ -1,0 +1,10 @@
+git
+node
+python@3.11
+curl
+jq
+tree
+bat
+fzf
+neovim
+docker
