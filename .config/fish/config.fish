@@ -58,6 +58,7 @@ abbr -a ls 'lsd -l'
 abbr -a ll 'lsd -l'
 abbr -a snr "sh setupNodeRepo"
 abbr -a cl claude
+abbr -a m mise
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
@@ -76,3 +77,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# activate mise
+~/.local/bin/mise activate fish | source
