@@ -14,6 +14,8 @@
   "chat.commandCenter.enabled": false,
   "css.lint.argumentsInColorFunction": "ignore",
   "css.lint.emptyRules": "ignore",
+  "cursor.cmdk.useThemedDiffBackground2": false,
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "diffEditor.codeLens": true,
   "diffEditor.maxComputationTime": 0,
   "editor.accessibilitySupport": "off",
