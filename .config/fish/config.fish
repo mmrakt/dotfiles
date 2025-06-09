@@ -5,10 +5,14 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# peco
-function fish_user_key_bindings
-  bind \cr peco_select_history
-  bind \cg peco_cd
+# search command history
+function ph
+  peco_select_history
+end
+
+# search ghq repository
+function pc
+  peco_cd
 end
 
 # path
