@@ -163,5 +163,7 @@
     "!Split sequence",
     "!Join sequence"
   ],
-  "yaml.format.enable": true
+  "yaml.format.enable": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "workbench.iconTheme": "icons"
 }

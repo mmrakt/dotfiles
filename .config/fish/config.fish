@@ -69,10 +69,10 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # oy-my-posh theme
 # ref. https://ohmyposh.dev/docs/installation/customize
-oh-my-posh init fish --config /Users/01056277/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/jblab_2021.omp.json | source
+oh-my-posh init fish --config /Users/akitomimura/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/the-unnamed.omp.json | source
 
 # pnpm
-set -gx PNPM_HOME "/Users/01056277/Library/pnpm"
+set -gx PNPM_HOME "/Users/akitomimura/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
