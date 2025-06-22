@@ -1,0 +1,29 @@
+{
+  "Print to console": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "dd",
+    "body": ["console.log('$1', $2);"]
+  },
+  "Print to console for nesting data": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "ddd",
+    "body": ["console.log($1, JSON.stringify($2, null, 2));"]
+  },
+  "const": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "co",
+    "body": ["const"]
+  },
+
+  "jest test": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "jest",
+    "body": [
+      "describe('', () => {",
+      "\tbeforeEach(() => {})",
+      "\tafterEach(() => {})",
+      "\tit('', () => {})",
+      "})"
+    ]
+  }
+}

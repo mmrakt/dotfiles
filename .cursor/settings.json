@@ -133,7 +133,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.panel.showLabels": false,
-  "workbench.preferredDarkColorTheme": "Tokyo Night Void",
+  "workbench.preferredDarkColorTheme": "Bearded Theme Arc Blueberry",
   "workbench.preferredLightColorTheme": "Anysphere Lambda Dark+",
   "workbench.sideBar.location": "left",
   "yaml.customTags": [
@@ -165,5 +165,9 @@
   ],
   "yaml.format.enable": true,
   "editor.inlineSuggest.suppressSuggestions": true,
-  "workbench.iconTheme": "icons"
+  "workbench.iconTheme": "icons",
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true
 }
