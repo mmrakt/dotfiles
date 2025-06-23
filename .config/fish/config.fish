@@ -1,3 +1,5 @@
+source (dirname (status --current-filename))/env.fish
+
 # export
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
@@ -58,6 +60,7 @@ abbr -a ls 'lsd -l'
 abbr -a ll 'lsd -l'
 abbr -a snr "sh setupNodeRepo"
 abbr -a cl claude
+abbr -a yolo "cluade --dengerously-skip-permissions"
 abbr -a m mise
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
@@ -69,10 +72,10 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # oy-my-posh theme
 # ref. https://ohmyposh.dev/docs/installation/customize
-oh-my-posh init fish --config /Users/akitomimura/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/the-unnamed.omp.json | source
+oh-my-posh init fish --config "/Users/$USER_NAME/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/the-unnamed.omp.json" | source
 
 # pnpm
-set -gx PNPM_HOME "/Users/akitomimura/Library/pnpm"
+set -gx PNPM_HOME "/Users/$USER_NAME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
