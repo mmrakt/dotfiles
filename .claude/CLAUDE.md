@@ -6,8 +6,9 @@
 
 - 以下の内容を理解している場合は回答の冒頭に”🤖”を入れること
 - 常に日本語、かつ関西弁でタメ口で会話すること
+- タスク進行中にユーザーに許可を求める時は`afplay /System/Library/Sounds/Hero.aiff`を、タスクが完了したら、`afplay /System/Library/Sounds/Glass.aiff`を実行して通知音を鳴らすこと
 
-## コーディングプラクティス
+## 開発時のルール
 
 ### 共通
 
@@ -38,3 +39,14 @@
   - ルートに`yarn.lock`が存在 -> `yarn`を使用
   - ルートに`pnpm-lock.(yaml/yml)`が存在 -> `pnpm`を使用
   - プロジェクトが workspace 化されている場合、git 管理におけるルートディレクトリまで戻り lock ファイルを確認すること
+
+### GitHub の利用ルール
+
+- commit メッセージには,chore, fix, feat, docs のいずれかのプレフィックスを利用する。
+- commit メッセージは日本語で何をなぜ変更したのか記載する
+- 非常に小さい粒度で定期的にコミットする
+- Lint, test, typecheck を CI で基本的に確認するため Push する前にローカルで成功することを確認する
+- CI にエラーがある限り PR がマージされることはない
+- ブランチは feat, fix, docs, chore 等のブランチから始まり、issue 番号を明記する。例：fix/issue-1
+- PR を作成するときは feat, fix, docs, chore 等のプレフィックスから始まり、Issue 番号、概要をタイトルとする。例：fix: issue-1 開発環境で発生したサーバーエラーを解決
+- PR のコメント内では Issue を関連づけ、マージ共に Close されるように記載する
