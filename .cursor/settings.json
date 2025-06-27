@@ -11,6 +11,12 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "custom-ui-style.electron": {
+    "frame": true,
+    "vibrancy": "appearance-based",
+    "visualEffectState": "followWindow",
+    "opacity": 0.95
+  },
   "chat.commandCenter.enabled": false,
   "css.lint.argumentsInColorFunction": "ignore",
   "css.lint.emptyRules": "ignore",
@@ -133,7 +139,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.panel.showLabels": false,
-  "workbench.preferredDarkColorTheme": "Bearded Theme Arc Blueberry",
+  "workbench.preferredDarkColorTheme": "Tokyo Night Void",
   "workbench.preferredLightColorTheme": "Anysphere Lambda Dark+",
   "workbench.sideBar.location": "left",
   "yaml.customTags": [
