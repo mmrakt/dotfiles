@@ -11,17 +11,21 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "custom-ui-style.electron": {
-    "frame": true,
-    "vibrancy": "appearance-based",
-    "visualEffectState": "followWindow",
-    "opacity": 0.95
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
   },
+  "biome.suggestInstallingGlobally": false,
   "chat.commandCenter.enabled": false,
   "css.lint.argumentsInColorFunction": "ignore",
   "css.lint.emptyRules": "ignore",
   "cursor.cmdk.useThemedDiffBackground2": false,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "custom-ui-style.electron": {
+    "frame": true,
+    "opacity": 0.95,
+    "vibrancy": "appearance-based",
+    "visualEffectState": "followWindow"
+  },
   "diffEditor.codeLens": true,
   "diffEditor.maxComputationTime": 0,
   "editor.accessibilitySupport": "off",
@@ -40,6 +44,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "strings": true
@@ -111,6 +116,7 @@
   "search.quickOpen.includeHistory": false,
   "search.useGlobalIgnoreFiles": true,
   "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
@@ -122,6 +128,7 @@
       "path": "/opt/homebrew/bin/fish"
     }
   },
+  "typescript.experimental.useTsgo": true,
   "typescript.locale": "en",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -136,6 +143,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.wrapTabs": true,
   "workbench.externalBrowser": "arc",
+  "workbench.iconTheme": "bearded-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.panel.showLabels": false,
@@ -169,11 +177,5 @@
     "!Split sequence",
     "!Join sequence"
   ],
-  "yaml.format.enable": true,
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "workbench.iconTheme": "icons",
-  "accessibility.signals.terminalBell": {
-    "sound": "on"
-  },
-  "terminal.integrated.enableVisualBell": true
+  "yaml.format.enable": true
 }

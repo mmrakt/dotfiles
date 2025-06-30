@@ -2,3 +2,5 @@ ide/
 projects/
 statsig/
 todos/
+local/
+.checksums
