@@ -1,0 +1,42 @@
+## For JavaScript/TypeScript Projects
+
+### File Structure and Module Design
+
+- Divide modules by functionality and adhere to the single responsibility principle
+- Barrel exports (re-exports from index.ts) are completely prohibited
+  - Reason: Hinders tree-shaking, creates circular dependency risks, and bloats build size
+- Import each module directly and maintain explicit dependencies
+- Prefer absolute path imports over relative paths
+
+### Naming Conventions
+
+- Directory and file names should use kebab-case
+- Variable names
+  - Use camelCase for "dynamic values (determined at runtime)" and UPPER_SNAKE_CASE for "static values (determined before execution and immutable)"
+  - Avoid abstract names like `data` or `value` that make it difficult to infer the stored value; use specific yet not overly verbose names
+- Test files should be named `**.test.ts`
+
+### Type Definitions
+
+- Avoid explicitly defining return types for functions and methods; rely on type inference
+- Do not use `any` or type casting with `as`; provide accurate types
+- Leverage generics appropriately to enhance type reusability
+- Use `type` instead of `interface`
+- Add `as const` to objects that are static variables as described above
+
+### Asynchronous Processing
+
+- Prefer async/await over Promise chains
+- Use `Promise.all()` or `Promise.allSettled()` for parallel processing
+- Always implement error handling
+- Explicitly define return types for async functions
+- Consider implementing timeout handling
+
+### Other Guidelines
+
+- For import statements, do not use absolute paths; always use import aliases starting with `@/`
+- Determine the package management tool being used from the following and use appropriate commands:
+  - If `package-lock.json` exists in root -> use `npm`
+  - If `yarn.lock` exists in root -> use `yarn`
+  - If `pnpm-lock.(yaml/yml)` exists in root -> use `pnpm`
+  - If the project is workspaced, navigate back to the git root directory to check for lock files
