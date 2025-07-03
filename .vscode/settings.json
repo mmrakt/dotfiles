@@ -119,7 +119,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
   "window.autoDetectColorScheme": true,
-  "window.commandCenter": false,
+  "window.commandCenter": true,
   "window.zoomLevel": -1,
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
