@@ -70,7 +70,7 @@ abbr -a ls 'lsd -l'
 abbr -a ll 'lsd -l'
 abbr -a snr "sh setupNodeRepo"
 abbr -a cl claude
-abbr -a yolo "cluade --dengerously-skip-permissions"
+abbr -a cly "claude --dangerously-skip-permissions"
 abbr -a m mise
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
