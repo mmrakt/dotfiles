@@ -78,10 +78,8 @@
       "shift-cmd-b": "workspace::ToggleBottomDock",
       "shift-cmd-r": "workspace::ToggleRightDock",
       "shift-cmd-z": "workspace::ToggleZoom",
-      "shift-cmd-c": "agent::ToggleFocus",
-      "shift-cmd-=": "agent::ToggleFocus",
+      "shift-cmd-i": "agent::ToggleFocus",
       "shift-cmd-\\": "agent::NewThread",
-      "shift-cmd-]": "agent::ToggleFocus",
       "shift-cmd-g": "git_panel::ToggleFocus",
       "cmd-.": "terminal_panel::ToggleFocus"
     }
@@ -171,8 +169,6 @@
       "cmd-shift-up": "editor::SelectToBeginning",
       "cmd-a": "editor::SelectAll",
       "cmd-l": "editor::SelectLine",
-
-      "cmd-shift-i": "editor::Format",
       "alt-shift-o": "editor::OrganizeImports",
       "cmd-shift-left": [
         "editor::SelectToBeginningOfLine",
@@ -219,7 +215,6 @@
       "alt-down": "editor::MoveLineDown",
       "alt-shift-up": "editor::DuplicateLineUp",
       "alt-shift-down": "editor::DuplicateLineDown",
-      "ctrl-shift-right": "editor::SelectLargerSyntaxNode",
       "ctrl-shift-left": "editor::SelectSmallerSyntaxNode",
       "cmd-d": ["editor::SelectNext", { "replace_newest": false }],
       "cmd-shift-l": "editor::SelectAllMatches",

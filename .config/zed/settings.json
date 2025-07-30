@@ -12,7 +12,11 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "One Dark",
-    "dark": "Bearded Theme Black Amethyst"
-  }
+    "light": "Moxer Blur",
+    "dark": "Moxer Blur"
+  },
+  "tabs": {
+    "file_icons": true
+  },
+  "buffer_font_family": "MesloLGL Nerd Font Mono"
 }
