@@ -122,13 +122,12 @@
       "path": "/opt/homebrew/bin/fish"
     }
   },
-  "typescript.experimental.useTsgo": true,
+  "typescript.experimental.useTsgo": false,
   "typescript.locale": "en",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsicons.dontShowNewVersionMessage": true,
-  "window.autoDetectColorScheme": true,
-  "window.commandCenter": false,
+  "window.autoDetectColorScheme": true,"window.commandCenter": false,
   "window.zoomLevel": -1,
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {

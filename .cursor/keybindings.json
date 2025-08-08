@@ -436,5 +436,9 @@
   {
     "key": "shift+cmd+]",
     "command": "workbench.action.chat.addSelectedFilesToWorkingSet"
+  },
+  {
+    "key": "cmd+e",
+    "command": "composerMode.background"
   }
 ]

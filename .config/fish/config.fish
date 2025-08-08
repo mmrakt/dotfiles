@@ -31,6 +31,7 @@ end
 set PATH /opt/homebrew/bin $PATH
 
 # abbr
+abbr -a k clear
 abbr -a n npm
 abbr -a nd "pnpm dev"
 abbr -a nb "pnpm build"

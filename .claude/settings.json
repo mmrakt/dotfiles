@@ -334,6 +334,9 @@
     "NODE_OPTIONS": "--max-old-space-size=4096"
   },
   "apiKeyHelper": null,
-  "preferredNotifChannel": "terminal_bell"
+  "preferredNotifChannel": "terminal_bell",
+  "feedbackSurveyState": {
+    "lastShownTime": 1754025707910
+  },
+  "$schema": "https://json.schemastore.org/claude-code-settings.json"
 }
-
