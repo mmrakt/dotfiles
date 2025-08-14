@@ -16,7 +16,7 @@ cd "/Users/$user_name/ghq/github.com/$repo_name"
 
 echo
 
-options=("npm" "yarn" "pnpm")
+options=("npm" "yarn" "pnpm" "bun")
 
 # ユーザーに対話的に選択させる
 PS3="Select a package manager (enter a number): "
@@ -25,6 +25,7 @@ select choice in "${options[@]}"; do
     1) package_manager="npm"; break ;;
     2) package_manager="yarn"; break ;;
     3) package_manager="pnpm"; break ;;
+    4) package_manager="bun"; break ;;
     *) echo "Invalid selection. Please enter a number between 1 and ${#options[@]}." ;;
   esac
 done
