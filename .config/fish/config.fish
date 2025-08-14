@@ -69,7 +69,7 @@ abbr -a v 'nvim .'
 abbr -a lg lazygit
 abbr -a ls 'lsd -l'
 abbr -a ll 'lsd -l'
-abbr -a snr "sh setupNodeRepo"
+abbr -a snr "sh /Users/$USER_NAME/ghq/github.com/mmrakt/utils/setupNodeRepo.sh"
 abbr -a cl claude
 abbr -a cly "claude --dangerously-skip-permissions"
 abbr -a m mise
@@ -94,3 +94,7 @@ end
 
 # activate mise
 ~/.local/bin/mise activate fish | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

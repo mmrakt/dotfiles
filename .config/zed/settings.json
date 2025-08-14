@@ -35,12 +35,21 @@
 		},
 		// ref: https://github.com/zed-industries/zed/issues/7626
 		"typescript-language-server": {
-			"initialization_options": {
+			"settings": {
 				"preferences": {
 					"importModuleSpecifierPreference": "non-relative"
 				}
 			}
-		}
+		},
+		// "vtsls": {
+		// 	"settings": {
+		// 		"typescript": {
+		// 			"preferences": {
+		// 				"importModuleSpecifier": "non-relative"
+		// 			}
+		// 		}
+		// 	}
+		// }
 	},
 	// ref. https://biomejs.dev/reference/zed/
 	"languages": {
@@ -50,5 +59,10 @@
 		"JSON": { "formatter": { "language_server": { "name": "biome" } } },
 		"JSONC": { "formatter": { "language_server": { "name": "biome" } } },
 		"CSS": { "formatter": { "language_server": { "name": "biome" } } }
+	},
+	"terminal": {
+		// ref. https://github.com/zed-industries/zed/issues/14476#issuecomment-2476370864
+		"font_family": "BlexMono Nerd Font Mono",
+		"font_size": 14
 	}
 }

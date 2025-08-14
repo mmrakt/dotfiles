@@ -140,7 +140,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.panel.showLabels": false,
-  "workbench.preferredDarkColorTheme": "Bearded Themanopia (Experimental)",
+  "workbench.preferredDarkColorTheme": "Tokyo Night Void",
   "workbench.preferredLightColorTheme": "Anysphere Lambda Dark+",
   "workbench.sideBar.location": "left",
   "yaml.customTags": [
@@ -171,5 +171,14 @@
     "!Join sequence"
   ],
   "yaml.format.enable": true,
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-http-request-pre-request.instructions.md": true
+  }
 }

@@ -14,17 +14,18 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
-  "biome.suggestInstallingGlobally": true,
-  "chat.commandCenter.enabled": false,
   "css.lint.argumentsInColorFunction": "ignore",
   "css.lint.emptyRules": "ignore",
   "cursor.cmdk.useThemedDiffBackground2": false,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "custom-ui-style.electron": {
-    "frame": true,
-    "opacity": 0.95,
-    "vibrancy": "appearance-based",
-    "visualEffectState": "followWindow"
+    "frame": false,
+    "backgroundMaterial": "acrylic",
+    "titleBarStyle": "hidden",
+    "backgroundColor": "rgba(255, 255, 255, 0.5)",
+    "transparent": true,
+    "opacity": 0.9,
+    "vibrancy": "dark"
   },
   "diffEditor.codeLens": true,
   "diffEditor.maxComputationTime": 0,
@@ -58,23 +59,12 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "files.eol": "\n",
   "files.exclude": {
-    "**/node_modules": true
+    "**/node_modules": false
   },
   "files.insertFinalNewline": true,
   "git.confirmSync": false,
@@ -173,8 +163,9 @@
   ],
   "yaml.format.enable": true,
   "editor.linkedEditing": true,
-  "workbench.colorTheme": "Bearded Theme Surprising Eggplant",
+  "workbench.colorTheme": "Tokyo Night Void",
   "window.titleBarStyle": "custom",
   "terminal.integrated.gpuAcceleration": "off",
-  "window.systemColorTheme": "dark"
+  "window.systemColorTheme": "dark",
+  "workbench.statusBar.visible": false
 }

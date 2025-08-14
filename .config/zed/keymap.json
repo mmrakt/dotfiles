@@ -32,14 +32,13 @@
       "escape": "menu::Cancel",
       "alt-shift-enter": "menu::Restart",
       "cmd-shift-w": "workspace::CloseWindow",
-      "shift-escape": "workspace::ToggleZoom",
+      "cmd-g": "workspace::ToggleZoom",
       "cmd-o": "workspace::Open",
       "cmd-=": ["zed::IncreaseBufferFontSize", { "persist": false }],
       "cmd-+": ["zed::IncreaseBufferFontSize", { "persist": false }],
       "cmd--": ["zed::DecreaseBufferFontSize", { "persist": false }],
       "cmd-0": ["zed::ResetBufferFontSize", { "persist": false }],
       "cmd-q": "zed::Quit",
-      "cmd-h": "zed::Hide",
       "alt-cmd-h": "zed::HideOthers",
       "cmd-m": "zed::Minimize",
       "fn-f": "zed::ToggleFullScreen",
@@ -66,9 +65,8 @@
       "cmd-g": "terminal_panel::ToggleFocus",
       "cmd-t": "workspace::ToggleBottomDock",
       "cmd-j": "zed::OpenSettings",
-      "cmd-,": "zed::OpenSettings",
       "cmd-k cmd-w": "workspace::CloseAllItemsAndPanes",
-      "cmd-k cmd-s": "zed::OpenKeymap",
+      "cmd-k cmd-s": "zed::OpenKeymapEditor",
       "ctrl-[": "pane::ActivatePreviousItem",
       "ctrl-]": "pane::ActivateNextItem",
       "shift-cmd-x": "zed::Extensions",
@@ -77,11 +75,10 @@
       "shift-cmd-e": "project_panel::ToggleFocus",
       "shift-cmd-b": "workspace::ToggleBottomDock",
       "shift-cmd-r": "workspace::ToggleRightDock",
-      "shift-cmd-z": "workspace::ToggleZoom",
+      "cmd-g": "workspace::ToggleZoom",
       "shift-cmd-i": "agent::ToggleFocus",
       "shift-cmd-\\": "agent::NewThread",
-      "shift-cmd-g": "git_panel::ToggleFocus",
-      "cmd-.": "terminal_panel::ToggleFocus"
+      "shift-cmd-g": "git_panel::ToggleFocus"
     }
   },
   {
@@ -681,7 +678,6 @@
       "ctrl--": "pane::GoBack",
       "ctrl-_": "pane::GoForward",
       "cmd-shift-f": "pane::DeploySearch",
-      "cmd-k up": "pane::SplitUp",
       "cmd-k down": "pane::SplitDown",
       "cmd-k left": "pane::SplitLeft"
     }
@@ -1095,6 +1091,35 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd-f": "search::FocusSearch"
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "cmd-g": null
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-g": null
+    }
+  },
+  {
+    "bindings": {
+      "cmd-,": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-,": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": null
     }
   }
 ]
