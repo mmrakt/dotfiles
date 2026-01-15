@@ -1,0 +1,32 @@
+# Curl / Script Installed Commands
+# These tools were identified as being installed via manual scripts (curl | bash/sh/fish)
+# rather than Homebrew.
+
+# bun
+# https://bun.sh
+curl -fsSL https://bun.sh/install | bash
+
+# claude
+# https://claude.ai
+curl -fsSL https://claude.ai/install.sh | bash
+
+# mise
+# https://mise.jdx.dev
+curl https://mise.run | sh
+
+# plandex
+# https://plandex.ai
+curl -sL https://plandex.ai/install.sh | bash
+
+# fisher (Fish Plugin Manager)
+# https://github.com/jorgebucaran/fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# oh-my-fish (OMF)
+# https://github.com/oh-my-fish/oh-my-fish
+curl -L https://get.oh-my.fish | fish
+
+# rustup
+# https://rustup.rs
+# Note: Also present in Homebrew packages.txt
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
