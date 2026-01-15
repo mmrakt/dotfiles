@@ -1,4 +1,10 @@
+container-use
+fig
+font-blex-mono-nerd-font
+font-hack-nerd-font
+font-symbols-only-nerd-font
+ghostty
+hyper
+kiro
 visual-studio-code
-iterm2
-firefox
-slack
+zed

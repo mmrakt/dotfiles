@@ -1,0 +1,9 @@
+@google/gemini-cli
+@typespec/compiler
+ccmanager
+ccusage
+deno
+expo
+repomix
+reviewit
+turbo

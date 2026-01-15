@@ -438,10 +438,6 @@
     "command": "workbench.action.chat.addSelectedFilesToWorkingSet"
   },
   {
-    "key": "cmd+e",
-    "command": "composerMode.background"
-},
-{
     "key": "shift+enter",
     "command": "workbench.action.terminal.sendSequence",
     "args": {

@@ -4,3 +4,7 @@ statsig/
 todos/
 local/
 .checksums
+debug/
+file-history/
+history.jsonl
+shell-snapshots/

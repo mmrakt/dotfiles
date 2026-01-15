@@ -24,7 +24,7 @@
     "titleBarStyle": "hidden",
     "backgroundColor": "rgba(255, 255, 255, 0.5)",
     "transparent": true,
-    "opacity": 0.9,
+    "opacity": 0.99,
     "vibrancy": "dark"
   },
   "diffEditor.codeLens": true,
@@ -34,8 +34,9 @@
   "editor.autoClosingQuotes": "always",
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "always",
-    "source.fixAll.biome": "always"
-    // "source.fixAll.eslint": "always"
+    "quickfix.biome": "always",
+    "source.fixAll.biome": "always",
+    "source.organizeImports.biome": "always"
   },
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "biomejs.biome",
@@ -126,7 +127,7 @@
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.wrapTabs": true,
-  "workbench.externalBrowser": "arc",
+  "workbench.externalBrowser": "dia",
   "workbench.iconTheme": "bearded-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
@@ -163,9 +164,26 @@
   ],
   "yaml.format.enable": true,
   "editor.linkedEditing": true,
-  "workbench.colorTheme": "Tokyo Night Void",
+  "workbench.colorTheme": "Bearded Theme Monokai Reversed",
   "window.titleBarStyle": "custom",
   "terminal.integrated.gpuAcceleration": "off",
   "window.systemColorTheme": "dark",
-  "workbench.statusBar.visible": false
+  "rust-analyzer.cachePriming.enable": false,
+  "rust-analyzer.procMacro.enable": false,
+  "rust-analyzer.cargo.buildScripts.enable": false,
+  "rust-analyzer.cargo.runBuildScripts": false,
+  "rust-analyzer.cargo.features": [],          // 必要最小限だけ列挙
+  "rust-analyzer.diagnostics.enable": true,
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"],
+
+  // 解析対象の縮小（モノレポ向け）
+  // "rust-analyzer.linkedProjects": ["crates/foo/Cargo.toml", "crates/bar/Cargo.toml"],
+
+  // サーバープロセスの環境変数で上限
+  "rust-analyzer.server.extraEnv": {
+    "RUST_ANALYZER_MEMORY_LIMIT_MB": "2048"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
 }
