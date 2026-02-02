@@ -37,7 +37,7 @@ abbr -a v 'nvim .'
 abbr -a lg lazygit
 abbr -a ls 'lsd -l'
 abbr -a ll 'lsd -l'
-abbr -a snr "sh /Users/$USER_NAME/ghq/github.com/mmrakt/dotfiles/utils/setup-node-repo.sh"
+abbr -a snr "sh $HOME/ghq/github.com/mmrakt/dotfiles/utils/setup-node-repo.sh"
 abbr -a cl claude
 abbr -a cly "claude --dangerously-skip-permissions"
 abbr -a m mise
