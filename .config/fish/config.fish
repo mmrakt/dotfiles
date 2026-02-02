@@ -6,17 +6,19 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    # oy-my-posh theme
+    # oh-my-posh theme
     # ref. https://ohmyposh.dev/docs/installation/customize
-    oh-my-posh init fish --config "$HOME/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/the-unnamed.omp.json" | source
-    
-    test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-    
+    if type -q oh-my-posh
+        oh-my-posh init fish --config "$HOME/ghq/github.com/mmrakt/dotfiles/.config/fish/themes/the-unnamed.omp.json" | source
+    end
+
+    test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
+
     # activate mise
-    ~/.local/bin/mise activate fish | source
+    test -x ~/.local/bin/mise; and ~/.local/bin/mise activate fish | source
 end
 
 # Added by Antigravity
-fish_add_path $HOME/.antigravity/antigravity/bin
+test -d $HOME/.antigravity/antigravity/bin; and fish_add_path $HOME/.antigravity/antigravity/bin
 
 set PATH $HOME/ghq/github.com/mmrakt/dotfiles/.bin $PATH

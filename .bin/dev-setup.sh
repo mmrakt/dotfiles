@@ -56,6 +56,16 @@ function install_bun_globals
     end
 end
 
+function install_curl_tools
+    if test -f $dotfiles/curl-installs.txt
+        echo "🌐 Installing curl-based tools..."
+        for cmd in (cat $dotfiles/curl-installs.txt | string trim | string match -v '' | string match -v '#*')
+            echo "📥 Running: $cmd"
+            eval $cmd
+        end
+    end
+end
+
 switch $argv[1]
     case packages
         install_packages
@@ -65,7 +75,10 @@ switch $argv[1]
         install_npm_globals
         install_pnpm_globals
         install_bun_globals
+    case curl
+        install_curl_tools
     case '*'
+        install_curl_tools
         install_packages
         install_apps
         install_npm_globals
