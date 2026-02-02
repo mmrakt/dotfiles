@@ -1,5 +1,5 @@
-source (dirname (status --current-filename))/env.fish
-test -f (dirname (status --current-filename))/secrets.fish; and source (dirname (status --current-filename))/secrets.fish
+set -l config_dir (dirname (status --current-filename))
+test -f $config_dir/secrets.fish; and source $config_dir/secrets.fish
 
 # export
 export LSCOLORS=gxfxcxdxbxegedabagacad
