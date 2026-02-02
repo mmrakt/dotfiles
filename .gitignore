@@ -1,4 +1,6 @@
 .config/raycast/
+.config/fish/fish_variables
+.config/fish/secrets.fish
 
 .cursor/extensions/
 .vscode/extensions/

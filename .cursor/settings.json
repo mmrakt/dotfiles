@@ -164,7 +164,7 @@
   ],
   "yaml.format.enable": true,
   "editor.linkedEditing": true,
-  "workbench.colorTheme": "Bearded Theme Monokai Reversed",
+  "workbench.colorTheme": "Bearded Theme feat. Will",
   "window.titleBarStyle": "custom",
   "terminal.integrated.gpuAcceleration": "off",
   "window.systemColorTheme": "dark",

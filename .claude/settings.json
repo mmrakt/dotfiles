@@ -201,7 +201,6 @@
       "Glob(**)",
       "LS(**)",
       "WebFetch(domain:*)",
-      "WebSearch(*)",
       "Write(~/projects/**)",
       "Write(~/work/**)",
       "Write(~/dev/**)",
@@ -259,8 +258,6 @@
       "Bash(fdisk:*)",
       "Bash(> /dev/*)",
       "Bash(>> /dev/*)",
-      "Bash(sudo:*passwd*)",
-      "Bash(sudo:*shadow*)",
       "Bash(chmod 777 /*)",
       "Bash(chown root:*)",
       "Bash(sudo chmod 777:*)",
@@ -323,7 +320,7 @@
     "DISABLE_COST_WARNINGS": "0",
     "BASH_DEFAULT_TIMEOUT_MS": "300000",
     "BASH_MAX_TIMEOUT_MS": "1200000",
-    "MAX_THINKING_TOKENS": "200000",
+    "MAX_THINKING_TOKENS": "63999",
     "SHELL": "/opt/homebrew/bin/fish",
     "UV_CACHE_DIR": "~/.cache/uv",
     "UV_PYTHON_PREFERENCE": "managed",
@@ -333,10 +330,31 @@
     "GOPATH": "~/go",
     "NODE_OPTIONS": "--max-old-space-size=4096"
   },
-  "apiKeyHelper": null,
   "preferredNotifChannel": "terminal_bell",
   "feedbackSurveyState": {
     "lastShownTime": 1754025707910
   },
-  "$schema": "https://json.schemastore.org/claude-code-settings.json"
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Ping.aiff"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Ping.aiff"
+          }
+        ]
+      }
+    ]
+  }
 }
