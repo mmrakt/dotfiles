@@ -17,3 +17,7 @@ end
 
 # Added by Antigravity
 fish_add_path /Users/akitomimura/.antigravity/antigravity/bin
+
+# MCP tokens
+set -gx TANSTACK_MCP_TOKEN "ts_afd499c1f7caf448a9fc2f40d7f42d0d931e4e69c60ee7b55722cef7e9232d10"
+set PATH $HOME/ghq/github.com/mmrakt/dotfiles/.bin $PATH
