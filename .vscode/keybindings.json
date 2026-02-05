@@ -302,7 +302,7 @@
     "when": "inDebugRepl"
   },
   {
-    "key": "shift+cmd+]",
+    "key": "cmd+r",
     "command": "workbench.panel.chat",
     "when": "workbench.panel.chat.view.copilot.active"
   },

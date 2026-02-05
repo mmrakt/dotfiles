@@ -31,7 +31,7 @@ abbr -a gl "git log --oneline"
 abbr -a gst "git stash"
 abbr -a gr "git reset --hard"
 abbr -a gu "gitui"
-abbr -a c cursor
+abbr -a c code
 abbr -a f 'find . -name ""'
 abbr -a v 'nvim .'
 abbr -a lg lazygit
