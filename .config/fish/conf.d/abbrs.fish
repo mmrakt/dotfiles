@@ -41,3 +41,7 @@ abbr -a snr "sh $HOME/ghq/github.com/mmrakt/dotfiles/utils/setup-node-repo.sh"
 abbr -a cl claude
 abbr -a cly "claude --dangerously-skip-permissions"
 abbr -a m mise
+abbr -a yz yazi
+abbr -a ol ollama
+abbr -a --position anywhere i install
+abbr -a br brew

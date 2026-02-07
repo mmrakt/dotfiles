@@ -446,5 +446,13 @@
     "key": "alt+g",
     "command": "-cloudcode.gemini.chatView.focus",
     "when": "!inputFocus && !runningOnCloudShell"
-  }
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+}
 ]

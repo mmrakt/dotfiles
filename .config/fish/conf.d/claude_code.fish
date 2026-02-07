@@ -1,0 +1,5 @@
+set -x ANTHROPIC_BASE_URL http://localhost:11434
+set -x ANTHROPIC_AUTH_TOKEN ollama
+set -x ANTHROPIC_API_KEY ""
+set -x OLLAMA_CONTEXT_LENGTH 64000
+ 

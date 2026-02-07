@@ -14,7 +14,18 @@
     "CARGO_HOME": "~/.cargo",
     "RUSTUP_HOME": "~/.rustup",
     "GOPATH": "~/go",
-    "NODE_OPTIONS": "--max-old-space-size=4096"
+    "NODE_OPTIONS": "--max-old-space-size=4096",
+    "ANTHROPIC_BASE_URL": "http://localhost:11434",
+    "ANTHROPIC_API_KEY": "",
+    "ANTHROPIC_AUTH_TOKEN": "ollama",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_BUG_COMMAND": "1",
+    "DISABLE_TELEMETRY": "1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-oss:20b",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-oss:20b",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-oss:20b",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "gpt-oss:20b"
   },
   "permissions": {
     "allow": [
