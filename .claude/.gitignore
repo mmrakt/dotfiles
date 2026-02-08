@@ -8,3 +8,10 @@ debug/
 file-history/
 history.jsonl
 shell-snapshots/
+settings.work.json
+settings.private.json
+stats-cache.json
+telemetry/
+tasks/
+teams/
+cache/
