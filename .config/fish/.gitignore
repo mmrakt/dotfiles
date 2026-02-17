@@ -1,2 +1,4 @@
 fish_variables
 env.fish
+
+conf.d/claude_code.fish

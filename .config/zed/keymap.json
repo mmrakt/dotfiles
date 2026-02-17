@@ -43,7 +43,7 @@
       "cmd-m": "zed::Minimize",
       "fn-f": "zed::ToggleFullScreen",
       "ctrl-cmd-f": "zed::ToggleFullScreen",
-      "ctrl-cmd-z": "edit_prediction::RateCompletions",
+      "ctrl-cmd-z": null,
       "ctrl-cmd-i": "edit_prediction::ToggleMenu",
       "ctrl-cmd-l": "lsp_tool::ToggleMenu"
     }
@@ -66,7 +66,7 @@
       "cmd-t": "workspace::ToggleBottomDock",
       "cmd-j": "zed::OpenSettings",
       "cmd-k cmd-w": "workspace::CloseAllItemsAndPanes",
-      "cmd-k cmd-s": "zed::OpenKeymapEditor",
+      "cmd-k cmd-s": null,
       "ctrl-[": "pane::ActivatePreviousItem",
       "ctrl-]": "pane::ActivateNextItem",
       "shift-cmd-x": "zed::Extensions",
@@ -459,22 +459,22 @@
       "cmd-alt-p": "agent::OpenRulesLibrary",
       "cmd-i": "agent::ToggleProfileSelector",
       "cmd-alt-/": "agent::ToggleModelSelector",
-      "cmd-shift-a": "agent::ToggleContextPicker",
+      "cmd-shift-a": null,
       "cmd-shift-j": "agent::ToggleNavigationMenu",
       "cmd-shift-i": "agent::ToggleOptionsMenu",
       "shift-alt-escape": "agent::ExpandMessageEditor",
       "cmd->": "assistant::QuoteSelection",
-      "cmd-alt-e": "agent::RemoveAllContext",
+      "cmd-alt-e": null,
       "cmd-shift-e": "project_panel::ToggleFocus",
-      "cmd-ctrl-b": "agent::ToggleBurnMode",
+      "cmd-ctrl-b": null,
       "cmd-shift-enter": "agent::ContinueThread",
-      "alt-enter": "agent::ContinueWithBurnMode"
+      "alt-enter": null
     }
   },
   {
     "context": "AgentPanel > NavigationMenu",
     "bindings": {
-      "shift-backspace": "agent::DeleteRecentlyOpenThread"
+      "shift-backspace": null
     }
   },
   {
@@ -536,8 +536,8 @@
       "right": "agent::FocusRight",
       "left": "agent::FocusLeft",
       "down": "agent::FocusDown",
-      "backspace": "agent::RemoveFocusedContext",
-      "enter": "agent::AcceptSuggestedContext"
+      "backspace": null,
+      "enter": null
     }
   },
   {
@@ -703,7 +703,7 @@
     "bindings": {
       "alt-tab": "editor::AcceptEditPrediction",
       "tab": "editor::AcceptEditPrediction",
-      "ctrl-cmd-right": "editor::AcceptPartialEditPrediction"
+      "ctrl-cmd-right": "editor::AcceptNextWordEditPrediction"
     }
   },
   {
@@ -711,7 +711,7 @@
     "use_key_equivalents": true,
     "bindings": {
       "alt-tab": "editor::AcceptEditPrediction",
-      "ctrl-cmd-right": "editor::AcceptPartialEditPrediction"
+      "ctrl-cmd-right": "editor::AcceptNextWordEditPrediction"
     }
   },
   {
@@ -758,9 +758,9 @@
     "context": "PromptEditor",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-shift-a": "agent::ToggleContextPicker",
+      "cmd-shift-a": null,
       "cmd-alt-/": "agent::ToggleModelSelector",
-      "cmd-alt-e": "agent::RemoveAllContext",
+      "cmd-alt-e": null,
       "ctrl-[": "agent::CyclePreviousInlineAssist",
       "ctrl-]": "agent::CycleNextInlineAssist"
     }
@@ -1024,20 +1024,20 @@
     "context": "RateCompletionModal",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-shift-enter": "zeta::ThumbsUpActiveCompletion",
-      "cmd-shift-backspace": "zeta::ThumbsDownActiveCompletion",
+      "cmd-shift-enter": null,
+      "cmd-shift-backspace": "zeta::ThumbsDownActivePrediction",
       "shift-down": "zeta::NextEdit",
       "shift-up": "zeta::PreviousEdit",
-      "right": "zeta::PreviewCompletion"
+      "right": "zeta::PreviewPrediction"
     }
   },
   {
     "context": "RateCompletionModal > Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "escape": "zeta::FocusCompletions",
-      "cmd-shift-enter": "zeta::ThumbsUpActiveCompletion",
-      "cmd-shift-backspace": "zeta::ThumbsDownActiveCompletion"
+      "escape": "zeta::FocusPredictions",
+      "cmd-shift-enter": null,
+      "cmd-shift-backspace": "zeta::ThumbsDownActivePrediction"
     }
   },
   {
