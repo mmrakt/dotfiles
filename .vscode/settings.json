@@ -1,29 +1,48 @@
 {
-    "chat.instructionsFilesLocations": {
-        ".github/instructions": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-collections-post-response.instructions.md": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-collections-pre-request.instructions.md": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-folder-post-response.instructions.md": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-folder-pre-request.instructions.md": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-http-request-post-response.instructions.md": true,
-        "/var/folders/7r/dgzc6q9d3xg8qr723zyhw4_80000gn/T/postman-http-request-pre-request.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-collections-post-response.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-collections-pre-request.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-folder-post-response.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-folder-pre-request.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-http-request-post-response.instructions.md": true,
-        "/var/folders/n8/bxwbxr7x6jg50k_lm3tf5fy80000gn/T/postman-http-request-pre-request.instructions.md": true
-    },
-    "workbench.colorTheme": "Bearded Theme Stained Purple",
-    "workbench.iconTheme": "bearded-icons",
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "chat.extensionUnification.enabled": true,
-    "github.copilot.chat.newWorkspace.useContext7": true,
-    "chat.mcp.gallery.enabled": true,
-    "chat.viewSessions.orientation": "stacked",
-    "git.enableSmartCommit": true,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+	"chat.instructionsFilesLocations": {
+		".github/instructions": true
+	},
+	"workbench.colorTheme": "Bearded Theme Stained Blue",
+	"workbench.iconTheme": "bearded-icons",
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"chat.extensionUnification.enabled": true,
+	"github.copilot.chat.newWorkspace.useContext7": true,
+	"chat.mcp.gallery.enabled": true,
+	"chat.viewSessions.orientation": "stacked",
+	"git.enableSmartCommit": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"chat.tools.urls.autoApprove": {
+		"https://code.visualstudio.com/docs/copilot/copilot-customization": true,
+		"https://code.visualstudio.com/docs/copilot": true,
+		"https://code.visualstudio.com/docs": true,
+		"https://code.visualstudio.com": true,
+		"https://*.visualstudio.com": true
+	},
+	"json.schemaDownload.trustedDomains": {
+		"https://schemastore.azurewebsites.net/": true,
+		"https://raw.githubusercontent.com/": true,
+		"https://www.schemastore.org/": true,
+		"https://json.schemastore.org/": true,
+		"https://json-schema.org/": true,
+		"https://biomejs.dev": true
+	},
+	"chat.tools.global.autoApprove": true,
+	"chat.tools.terminal.autoReplyToPrompts": true,
+	"chat.agent.maxRequests": 100,
+	"explorer.confirmDelete": false,
+	"chat.customAgentInSubagent.enabled": true,
+	"debug.showSubSessionsInToolBar": true,
+	"githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
+	"editor.accessibilitySupport": "off",
+	"editor.guides.bracketPairs": "active",
+	"chat.mcp.autostart": "newAndOutdated",
+	"git.confirmSync": false,
+	"custom-ui-style.electron": {
+		"frame": false,
+		"transparent": true,
+		"opacity": 0.95
+	}
 }

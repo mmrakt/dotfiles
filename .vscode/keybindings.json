@@ -1,458 +1,495 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "shift+cmd+right",
-    "command": "workbench.action.splitEditorRight"
-  },
-  {
-    "key": "cmd+k ctrl+alt+cmd+[IntlYen]",
-    "command": "-workbench.action.splitEditorRight"
-  },
-  {
-    "key": "shift+cmd+down",
-    "command": "workbench.action.splitEditorDown"
-  },
-  {
-    "key": "cmd+k ctrl+alt+cmd+[IntlYen]",
-    "command": "-workbench.action.splitEditorDown"
-  },
-  {
-    "key": "cmd+g",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
-    "key": "ctrl+shift+[BracketLeft]",
-    "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
-    "key": "cmd+t",
-    "command": "workbench.action.toggleMaximizedPanel"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "workbench.action.toggleFullScreen",
-    "when": "!isIOS"
-  },
-  {
-    "key": "ctrl+cmd+f",
-    "command": "-workbench.action.toggleFullScreen",
-    "when": "!isIOS"
-  },
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.openApplicationSettingsJson"
-  },
-  {
-    "key": "cmd+d",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "ctrl+shift+5",
-    "command": "-workbench.action.terminal.split",
-    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "shift+backspace",
-    "command": "workbench.action.terminal.kill"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-acceptSelectedCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
-    "key": "cmd+.",
-    "command": "terminal.focus",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "workbench.action.previousEditor"
-  },
-  {
-    "key": "shift+cmd+[",
-    "command": "-workbench.action.previousEditor"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "-workbench.action.nextEditor"
-  },
-  {
-    "key": "cmd+y",
-    "command": "redo"
-  },
-  {
-    "key": "shift+cmd+z",
-    "command": "-redo"
-  },
-  {
-    "key": "shift+cmd+j",
-    "command": "turboConsoleLog.displayLogMessage"
-  },
-  {
-    "key": "ctrl+alt+l",
-    "command": "-turboConsoleLog.displayLogMessage"
-  },
-  {
-    "key": "shift+cmd+x",
-    "command": "workbench.view.extensions",
-    "when": "viewContainer.workbench.view.extensions.enabled"
-  },
-  {
-    "key": "shift+cmd+x",
-    "command": "-workbench.view.extensions",
-    "when": "viewContainer.workbench.view.extensions.enabled"
-  },
-  {
-    "key": "shift+cmd+y",
-    "command": "copyRelativeFilePath",
-    "when": "!editorFocus"
-  },
-  {
-    "key": "shift+alt+cmd+c",
-    "command": "-copyRelativeFilePath",
-    "when": "!editorFocus"
-  },
-  {
-    "key": "shift+cmd+y",
-    "command": "-workbench.debug.action.toggleRepl",
-    "when": "workbench.panel.repl.view.active"
-  },
-  {
-    "key": "shift+cmd+y",
-    "command": "copyRelativeFilePath",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+k shift+alt+cmd+c",
-    "command": "-copyRelativeFilePath",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+b",
-    "command": "-markdown.extension.editing.toggleBold",
-    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-  },
-  {
-    "key": "shift+cmd+d",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
-    "key": "alt+cmd+a",
-    "command": "-bracket-select.select-include",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+a",
-    "command": "bracket-select.select",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+a",
-    "command": "-bracket-select.select",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+.",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+escape",
-    "command": "-workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-editor.changeDropType",
-    "when": "dropWidgetVisible"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-editor.changePasteType",
-    "when": "pasteWidgetVisible"
-  },
-  {
-    "key": "cmd+.",
-    "command": "workbench.action.terminal.focus",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+down",
-    "command": "-workbench.action.terminal.focus",
-    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
-  },
-  {
-    "key": "cmd+,",
-    "command": "-workbench.action.openSettings"
-  },
-  {
-    "key": "shift+cmd+b",
-    "command": "workbench.action.positionPanelBottom"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "workbench.action.positionPanelRight"
-  },
-  {
-    "key": "shift+cmd+d",
-    "command": "-workbench.view.debug",
-    "when": "viewContainer.workbench.view.debug.enabled"
-  },
-  {
-    "key": "shift+cmd+k",
-    "command": "-editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+k shift+cmd+d",
-    "command": "editor.emmet.action.balanceOut"
-  },
-  {
-    "key": "cmd+l cmd+o",
-    "command": "-extension.liveServer.goOnline",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+l cmd+c",
-    "command": "-extension.liveServer.goOffline",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+[Equal]",
-    "command": "workbench.action.zoomIn"
-  },
-  {
-    "key": "cmd+numpad_add",
-    "command": "-workbench.action.zoomIn"
-  },
-  {
-    "key": "alt+cmd+right",
-    "command": "-workbench.action.nextEditor"
-  },
-  {
-    "key": "shift+cmd+t",
-    "command": "workbench.view.extension.test"
-  },
-  {
-    "key": "shift+cmd+z",
-    "command": "workbench.action.toggleZenMode",
-    "when": "!isAuxiliaryWindowFocusedContext"
-  },
-  {
-    "key": "cmd+k z",
-    "command": "-workbench.action.toggleZenMode",
-    "when": "!isAuxiliaryWindowFocusedContext"
-  },
-  {
-    "key": "shift+cmd+c",
-    "command": "claude-dev.SidebarProvider.focus"
-  },
-  {
-    "key": "[ shift+cmd",
-    "command": "workbench.action.chat.toggleAgentMode",
-    "when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
-  },
-  {
-    "key": "cmd+.",
-    "command": "-workbench.action.chat.toggleAgentMode",
-    "when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
-  },
-  {
-    "key": "shift+cmd+i",
-    "command": "-workbench.panel.chatEditing",
-    "when": "workbench.panel.chat.view.edits.active"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "-workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "-workbench.action.debug.nextConsole",
-    "when": "inDebugRepl"
-  },
-  {
-    "key": "cmd+r",
-    "command": "workbench.panel.chat",
-    "when": "workbench.panel.chat.view.copilot.active"
-  },
-  {
-    "key": "ctrl+cmd+i",
-    "command": "-workbench.panel.chat",
-    "when": "workbench.panel.chat.view.copilot.active"
-  },
-  {
-    "key": "shift+cmd+\\",
-    "command": "workbench.action.chat.openEditSession",
-    "when": "chatEditingParticipantRegistered && !chatSetupHidden && view != 'workbench.panel.chat.view.edits'"
-  },
-  {
-    "key": "shift+cmd+i",
-    "command": "-workbench.action.chat.openEditSession",
-    "when": "chatEditingParticipantRegistered && !chatSetupHidden && view != 'workbench.panel.chat.view.edits'"
-  },
-  {
-    "key": "shift+cmd+v",
-    "command": "-markdown.showPreview",
-    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
-  },
-  {
-    "key": "shift+cmd+v",
-    "command": "-markdown-preview-enhanced.openPreview",
-    "when": "editorLangId == 'markdown'"
-  },
-  {
-    "key": "shift+cmd+g",
-    "command": "prStatus:github.focus"
-  },
-  {
-    "key": "cmd+,",
-    "command": "projectManager.openSettings#sideBarAny"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-aipopup.action.modal.generate",
-    "when": "editorFocus && !composerBarIsVisible"
-  },
-  {
-    "key": "cmd+l",
-    "command": "-aichat.newchataction"
-  },
-  {
-    "key": "cmd+l",
-    "command": "expandLineSelection",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "cmd+p",
-    "command": "-expandLineSelection",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "cmd+k cmd+w",
-    "command": "workbench.action.closeAllEditors"
-  },
-  {
-    "key": "cmd+r cmd+w",
-    "command": "-workbench.action.closeAllEditors"
-  },
-  {
-    "key": "cmd+k cmd+s",
-    "command": "workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "cmd+r cmd+s",
-    "command": "-workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-cursorai.action.generateInTerminal",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-editor.action.inlineDiffs.focusEditor",
-    "when": "editorHasPromptBar && editorPromptBarFocused"
-  },
-  {
-    "key": "cmd+k",
-    "command": "workbench.debug.panel.action.clearReplAction",
-    "when": "focusedView == 'workbench.panel.repl.view'"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-workbench.debug.panel.action.clearReplAction",
-    "when": "focusedView == 'workbench.panel.repl.view'"
-  },
-  {
-    "key": "cmd+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-workbench.action.terminal.clear",
-    "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
-  },
-  {
-    "key": "shift+cmd+=",
-    "command": "workbench.action.chat.open",
-    "when": "chatPanelParticipantRegistered || chatSetupInstalled"
-  },
-  {
-    "key": "ctrl+cmd+i",
-    "command": "-workbench.action.chat.open",
-    "when": "chatPanelParticipantRegistered || chatSetupInstalled"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "-workbench.action.terminal.split",
-    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "-workbench.action.splitEditor"
-  },
-  {
-    "key": "cmd+\\",
-    "command": "-workbench.action.terminal.splitActiveTab",
-    "when": "terminalProcessSupported && terminalTabsFocus"
-  },
-  {
-    "key": "shift+cmd+\\",
-    "command": "-editor.action.jumpToBracket",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "workbench.action.chat.addSelectedFilesToWorkingSet"
-  },
-  {
-    "key": "shift+cmd+g",
-    "command": "cloudcode.gemini.chatView.focus",
-    "when": "!inputFocus && !runningOnCloudShell"
-  },
-  {
-    "key": "alt+g",
-    "command": "-cloudcode.gemini.chatView.focus",
-    "when": "!inputFocus && !runningOnCloudShell"
-},
-{
-    "key": "shift+enter",
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-        "text": "\u001b\r"
-    },
-    "when": "terminalFocus"
-}
+	{
+		"key": "shift+cmd+right",
+		"command": "workbench.action.splitEditorRight"
+	},
+	{
+		"key": "cmd+k ctrl+alt+cmd+[IntlYen]",
+		"command": "-workbench.action.splitEditorRight"
+	},
+	{
+		"key": "shift+cmd+down",
+		"command": "workbench.action.splitEditorDown"
+	},
+	{
+		"key": "cmd+k ctrl+alt+cmd+[IntlYen]",
+		"command": "-workbench.action.splitEditorDown"
+	},
+	{
+		"key": "cmd+g",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+shift+[BracketLeft]",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "cmd+t",
+		"command": "workbench.action.toggleMaximizedPanel"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "workbench.action.toggleFullScreen",
+		"when": "!isIOS"
+	},
+	{
+		"key": "ctrl+cmd+f",
+		"command": "-workbench.action.toggleFullScreen",
+		"when": "!isIOS"
+	},
+	{
+		"key": "cmd+j",
+		"command": "workbench.action.openApplicationSettingsJson"
+	},
+	{
+		"key": "cmd+d",
+		"command": "workbench.action.terminal.split",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "ctrl+shift+5",
+		"command": "-workbench.action.terminal.split",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "shift+backspace",
+		"command": "workbench.action.terminal.kill"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-acceptSelectedCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{
+		"key": "cmd+.",
+		"command": "terminal.focus",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+[",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "shift+cmd+[",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+]",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "cmd+y",
+		"command": "redo"
+	},
+	{
+		"key": "shift+cmd+z",
+		"command": "-redo"
+	},
+	{
+		"key": "shift+cmd+j",
+		"command": "turboConsoleLog.displayLogMessage"
+	},
+	{
+		"key": "ctrl+alt+l",
+		"command": "-turboConsoleLog.displayLogMessage"
+	},
+	{
+		"key": "shift+cmd+x",
+		"command": "workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	},
+	{
+		"key": "shift+cmd+x",
+		"command": "-workbench.view.extensions",
+		"when": "viewContainer.workbench.view.extensions.enabled"
+	},
+	{
+		"key": "shift+cmd+y",
+		"command": "copyRelativeFilePath",
+		"when": "!editorFocus"
+	},
+	{
+		"key": "shift+alt+cmd+c",
+		"command": "-copyRelativeFilePath",
+		"when": "!editorFocus"
+	},
+	{
+		"key": "shift+cmd+y",
+		"command": "-workbench.debug.action.toggleRepl",
+		"when": "workbench.panel.repl.view.active"
+	},
+	{
+		"key": "shift+cmd+y",
+		"command": "copyRelativeFilePath",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+k shift+alt+cmd+c",
+		"command": "-copyRelativeFilePath",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-markdown.extension.editing.toggleBold",
+		"when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "alt+cmd+a",
+		"command": "-bracket-select.select-include",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+a",
+		"command": "bracket-select.select",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+a",
+		"command": "-bracket-select.select",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+.",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+escape",
+		"command": "-workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.changeDropType",
+		"when": "dropWidgetVisible"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.changePasteType",
+		"when": "pasteWidgetVisible"
+	},
+	{
+		"key": "cmd+.",
+		"command": "workbench.action.terminal.focus",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+down",
+		"command": "-workbench.action.terminal.focus",
+		"when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "cmd+,",
+		"command": "-workbench.action.openSettings"
+	},
+	{
+		"key": "shift+cmd+b",
+		"command": "workbench.action.positionPanelBottom"
+	},
+	{
+		"key": "shift+cmd+r",
+		"command": "workbench.action.positionPanelRight"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "-workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+k shift+cmd+d",
+		"command": "editor.emmet.action.balanceOut"
+	},
+	{
+		"key": "cmd+l cmd+o",
+		"command": "-extension.liveServer.goOnline",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+l cmd+c",
+		"command": "-extension.liveServer.goOffline",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "cmd+[Equal]",
+		"command": "workbench.action.zoomIn"
+	},
+	{
+		"key": "cmd+numpad_add",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "shift+cmd+t",
+		"command": "workbench.view.extension.test"
+	},
+	{
+		"key": "shift+cmd+z",
+		"command": "workbench.action.toggleZenMode",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "cmd+k z",
+		"command": "-workbench.action.toggleZenMode",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "shift+cmd+c",
+		"command": "claude-dev.SidebarProvider.focus"
+	},
+	{
+		"key": "[ shift+cmd",
+		"command": "workbench.action.chat.toggleAgentMode",
+		"when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-workbench.action.chat.toggleAgentMode",
+		"when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "workbench.panel.chatEditing",
+		"when": "workbench.panel.chat.view.edits.active"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "-workbench.panel.chatEditing",
+		"when": "workbench.panel.chat.view.edits.active"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "-workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "-workbench.action.debug.nextConsole",
+		"when": "inDebugRepl"
+	},
+	{
+		"key": "cmd+r",
+		"command": "workbench.panel.chat",
+		"when": "workbench.panel.chat.view.copilot.active"
+	},
+	{
+		"key": "ctrl+cmd+i",
+		"command": "-workbench.panel.chat",
+		"when": "workbench.panel.chat.view.copilot.active"
+	},
+	{
+		"key": "shift+cmd+\\",
+		"command": "workbench.action.chat.openEditSession",
+		"when": "chatEditingParticipantRegistered && !chatSetupHidden && view != 'workbench.panel.chat.view.edits'"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "-workbench.action.chat.openEditSession",
+		"when": "chatEditingParticipantRegistered && !chatSetupHidden && view != 'workbench.panel.chat.view.edits'"
+	},
+	{
+		"key": "shift+cmd+v",
+		"command": "-markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "shift+cmd+v",
+		"command": "-markdown-preview-enhanced.openPreview",
+		"when": "editorLangId == 'markdown'"
+	},
+	{
+		"key": "shift+cmd+g",
+		"command": "prStatus:github.focus"
+	},
+	{
+		"key": "cmd+,",
+		"command": "projectManager.openSettings#sideBarAny"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-aipopup.action.modal.generate",
+		"when": "editorFocus && !composerBarIsVisible"
+	},
+	{
+		"key": "cmd+l",
+		"command": "-aichat.newchataction"
+	},
+	{
+		"key": "cmd+l",
+		"command": "expandLineSelection",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "cmd+p",
+		"command": "-expandLineSelection",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "cmd+k cmd+w",
+		"command": "workbench.action.closeAllEditors"
+	},
+	{
+		"key": "cmd+r cmd+w",
+		"command": "-workbench.action.closeAllEditors"
+	},
+	{
+		"key": "cmd+k cmd+s",
+		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "cmd+r cmd+s",
+		"command": "-workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-cursorai.action.generateInTerminal",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-editor.action.inlineDiffs.focusEditor",
+		"when": "editorHasPromptBar && editorPromptBarFocused"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.debug.panel.action.clearReplAction",
+		"when": "focusedView == 'workbench.panel.repl.view'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-workbench.debug.panel.action.clearReplAction",
+		"when": "focusedView == 'workbench.panel.repl.view'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.clear",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "-workbench.action.terminal.clear",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "shift+cmd+=",
+		"command": "workbench.action.chat.open",
+		"when": "chatPanelParticipantRegistered || chatSetupInstalled"
+	},
+	{
+		"key": "ctrl+cmd+i",
+		"command": "-workbench.action.chat.open",
+		"when": "chatPanelParticipantRegistered || chatSetupInstalled"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "-workbench.action.terminal.split",
+		"when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "cmd+\\",
+		"command": "-workbench.action.terminal.splitActiveTab",
+		"when": "terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"key": "shift+cmd+\\",
+		"command": "-editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+]",
+		"command": "workbench.action.chat.addSelectedFilesToWorkingSet"
+	},
+	{
+		"key": "shift+cmd+g",
+		"command": "cloudcode.gemini.chatView.focus",
+		"when": "!inputFocus && !runningOnCloudShell"
+	},
+	{
+		"key": "alt+g",
+		"command": "-cloudcode.gemini.chatView.focus",
+		"when": "!inputFocus && !runningOnCloudShell"
+	},
+	{
+		"key": "shift+enter",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "\u001b\r"
+		},
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+k cmd+c",
+		"command": "-editor.action.addCommentLine",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+k m",
+		"command": "-workbench.action.editor.changeLanguageMode",
+		"when": "!notebookEditorFocused"
+	},
+	{
+		"key": "cmd+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "cmd+n",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+	},
+	// {
+	// 	"key": "shift+cmd+\\",
+	// 	"command": "-workbench.action.terminal.focusTabs",
+	// 	"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+	// },
+	{
+		"key": "shift+cmd+\\",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				"workbench.action.chat.openInEditor",
+				"workbench.action.newGroupRight",
+				"workbench.action.chat.openInEditor",
+				"workbench.action.newGroupRight",
+				"workbench.action.chat.openInEditor"
+			]
+		}
+	}
 ]
