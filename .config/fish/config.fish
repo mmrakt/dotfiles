@@ -22,3 +22,4 @@ end
 test -d $HOME/.antigravity/antigravity/bin; and fish_add_path $HOME/.antigravity/antigravity/bin
 
 set PATH $HOME/ghq/github.com/mmrakt/dotfiles/.bin $PATH
+fish_add_path ~/.krew/bin

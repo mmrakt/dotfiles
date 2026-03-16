@@ -363,9 +363,11 @@
       }
     ]
   },
+  "enabledPlugins": {
+    "plugin-dev@claude-plugins-official": true,
+    "example-skills@anthropic-agent-skills": true
+  },
   "theme": "dark",
   "preferredNotifChannel": "terminal_bell",
-  "enabledPlugins": {
-    "plugin-dev@claude-plugins-official": true
-  }
+  "skipDangerousModePermissionPrompt": true
 }
